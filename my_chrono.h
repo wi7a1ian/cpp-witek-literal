@@ -15,5 +15,15 @@ namespace my_chrono
         {
             return std::chrono::duration<long double, std::ratio<15*60,1>> (w);
         }
+
+        constexpr std::chrono::minutes operator "" _witki(unsigned long long w)
+        {
+            return std::chrono::minutes(15 * w);
+        }
+
+        constexpr std::chrono::duration<long double, std::ratio<15*60,1>> operator "" _witki(long double w)
+        {
+            return std::chrono::duration<long double, std::ratio<15*60,1>> (w);
+        }
     }
 }

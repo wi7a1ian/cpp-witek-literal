@@ -13,6 +13,7 @@ void FixControlCenterIn(std::chrono::seconds s);
 int main()
 {
   assert(1_witek == 15min);
+  assert(4_witki == 1hour);
   
   auto duration = 1_witek;
   FixControlCenterIn(duration);

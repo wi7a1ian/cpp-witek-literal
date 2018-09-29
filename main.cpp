@@ -31,6 +31,7 @@ void UsingChronoType()
     using namespace std::chrono_literals;
 
     assert(1_witek == 15min);
+    assert(4_witki == 1h);
 
     {
         using namespace my_chrono;
